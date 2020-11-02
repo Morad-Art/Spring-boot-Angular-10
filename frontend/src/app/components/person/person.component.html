@@ -1,0 +1,31 @@
+
+
+
+<div class="fix">
+    <h3 class="center" style="color: #9AAA04 ;">Employees Managment</h3>
+    <table class="table table-bordered">
+        <thead>
+          <tr style="background: #9AAA04; align-content: center;">
+            <th scope="col">#ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Job</th>
+            <th scope="col">Operations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of people">
+            
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.address}}</td>
+            <td>{{p.job}}</td>
+            <td>
+                <input type="submit" value="Edit" class="btn btn-info" (click)="updatePerson(p.id)">&nbsp;
+                <input type="submit" value="Delete" class="btn btn-danger" (click)="onDelete(p.id)"/>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

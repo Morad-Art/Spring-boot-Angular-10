@@ -1,0 +1,25 @@
+<div class="fix">
+    <h4 class="center">Search Result</h4>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Job</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of people">
+            
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.address}}</td>
+            <td>{{p.job}}</td>
+           
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

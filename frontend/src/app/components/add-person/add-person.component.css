@@ -1,0 +1,17 @@
+.fix{
+
+    margin-top: 40px;
+    align-items: center;
+}
+.center{
+
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.input.ng-invalid{
+border-color: red;
+}
+input.ng-untouched{
+    border-color: #ced4da;
+}
